@@ -79,10 +79,15 @@ function creatingData(data){
    container_min.classList.add('text-white', 'bolder', 'text-center')
    container_min.innerHTML=`Min: ${min} &#8451`
 
+   const container_humidity= document.createElement('p')
+   container_humidity.classList.add('text-white', 'bolder', 'text-center')
+   container_humidity.innerHTML=`<i class="bi bi-droplet-half"></i> ${humidity}`
+
    container_result.appendChild(country_name)
    container_result.appendChild(container_temper)
    container_result.appendChild(container_max)
    container_result.appendChild(container_min)
+   container_result.appendChild(container_humidity)
 }
 
 function kelvins(temperature){
